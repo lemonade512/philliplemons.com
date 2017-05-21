@@ -8,6 +8,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/about')
+def about():
+    return render_template("about.html")
+
 # Old blog redirect
 @ app.route('/2014/09/14/ray-casting-algorithm')
 def ray_casting_algorithm_redirect():
