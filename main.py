@@ -12,6 +12,10 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route('/posts/task-management')
+def task_management():
+    return render_template('task-management.html')
+
 @app.route('/posts/no-cheating-allowed')
 def no_cheating_allowed():
     return render_template("no-cheating-allowed.html")
@@ -30,5 +34,9 @@ def ray_casting_algorithm_redirect():
 @app.route('/2015/08/18/no-cheating-allowed')
 def no_cheating_allowed_redirect():
     return redirect('/posts/no-cheating-allowed', code=302)
+
+@app.route('/2015/10/03/task-management')
+def task_management_redirect():
+    return redirect('/posts/task-manager', code=302)
 
 

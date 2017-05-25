@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block header %}
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('/static/img/post-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Task Management</h1>
+                    <hr class="small">
+                    <span class="subheading">
+                    A quick overview of why task management is important for
+                    engineers and how I manage my tasks on a daily basis.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<h2>Introduction</h2>
+
+<p>
+    Task management is one of the most important skills that an engineer needs
+    to be good at. Bad task management can cause you to work slower and get
+    less done. Unfortunately, even though task management is so important, it
+    is seldom discussed at school or work. Even if you are on a team that does
+    a good job of managing tasks on a project, this does not necessarily mean
+    you are good at managing your own personal tasks or juggling multiple
+    projects at the same time. In this post I am going to outline my own
+    personal task management system by describing the aspects of a task
+    management system that I considered most important.
+</p>
+
+<h2>Workflowy</h2>
+
+<p>
+    Workflowy, the tool I use for my task management system, has features like
+    tags and zooming in on a section that make it ideal for task management.
+    Workflowy at its core is a simple bulleted list. However, with tags this
+    list becomes a categorized, easy to search, tool. Anything that starts with
+    a “#” or a “@” is a tag. When you click on a tag it automatically searches
+    for that tag everywhere else in your list and if you properly combine the
+    right tags it is easy to filter out unwanted noise in your list. Another
+    useful feature is the ability to zoom in on one section of your list. When
+    you click on a bullet you are zoomed into that part of the list and only
+    see everything that is contained under that bullet. Check out
+    <a href="https://www.youtube.com/watch?v=GxG9iJmWtM4"> this </a> 24
+    second video to see Workflowy in action.
+</p>
+
+<h2>Never Forget Anything</h2>
+
+<p>
+    One thing that I am always worried about when managing my tasks is that
+    some tasks may get buried and forgotten in a giant to-do list or that I
+    will forget things that I don’t write down. In order to never forget
+    anything,  I always carry a small journal around with me where I can write
+    down everything that comes to my mind the moment I think of it. I also have
+    a specific list in Workflowy called Inbox where I can just add thoughts
+    using my phone or computer. Each day I will spend some time in the evening
+    processing all of the things I wrote down in my journal or inbox during the
+    day. By capturing all of my ideas and using the tags described in the next
+    few sections, I am able to trust my system to never forget a task.
+</p>
+
+<h2>Organize by Context</h2>
+
+<p>
+    To make it easy to find tasks I created a simple structure for my lists and
+    added special context tags that allow me to filter out unwanted tasks. At
+    the top level of my Workflowy list I have 4 main categories. The first is
+    the inbox which I discussed in the section above. The other 3 are Personal,
+    School, and Work. These lists separate my tasks out into the three primary
+    areas of my life which allows me to focus on different tasks depending on
+    where I am. To make it easy to filter my tasks with specific criteria I
+    created a number of tags to describe the context of a given task. These tags
+    include @home, @internet, @town, @John, and others. As an example, if I am
+    about to go into town to do errands I can use the @town tag to see every
+    errand that I need to run. If I am about to meet my friend John to get some
+    work done I can use the @John tag to list all of the tasks related to John.
+</p>
+
+<h2>Planning for the Future</h2>
+
+<p>
+    The next feature I needed was to be able to plan when I would get tasks
+    done and take note of tasks that were important or urgent. To do this I
+    created the following tags: #thisweek, #nextweek, #thismonth, #nextmonth,
+    #someday, #important, #urgent. Every day when I am processing new tasks I
+    assign the tasks one of these tags. Tasks that I do not want to commit to a
+    deadline for are labeled with #someday. To handle tasks with due dates, I
+    use date tags of the form #d-yyyy-mm-dd. All these tags together make it
+    easy for me to see what tasks I have coming up, when tasks need to be
+    completed by, and still keep track of any tasks that I want to do but don’t
+    have time for now.
+</p>
+
+<h2>Consistent Review</h2>
+
+<p>
+    I am always looking to improve myself so I have weekly and monthly reviews
+    on how well my task management system is working. I also use these reviews
+    as a time to make sure all of the tags for my tasks are up to date. For
+    instance, I change #nextweek tags to #thisweek tags, and I see if there are
+    any tasks that can be done in the next week or two. It is important to keep
+    track of what obstacles are keeping you from getting things finished in any
+    given week.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+    I use workflowy to keep track of all of the tasks I need to finish. After
+    creating my system I have had a much better success rate at completing
+    tasks on time, not getting behind on things like homework or chores, and I
+    feel like I have more free time because I am less distracted when I am
+    doing my actual work. I highly recommend that engineers take time to review
+    bottlenecks in getting their work done efficiently and how they can improve
+    in their task management.
+</p>
+
+{% endblock %}
