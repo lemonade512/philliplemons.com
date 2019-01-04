@@ -12,6 +12,10 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route('/portfolio')
+def portfolio():
+    return render_template("portfolio.html")
+
 @app.route('/posts/task-management')
 def task_management():
     return render_template('task-management.html')
