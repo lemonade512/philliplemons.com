@@ -1,23 +1,12 @@
-{% extends "base.html" %}
-{% block header %}
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background: #202020">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>Task Management</h1>
-                    <hr class="small">
-                    <span class="subheading">
-                    A quick overview of why task management is important for
-                    engineers and how I manage my tasks on a daily basis.
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+{% extends "post.html" %}
+
+{% block post_title %}
+Task Management
+{% endblock %}
+
+{% block post_subtitle %}
+A quick overview of why task management is important for
+engineers and how I manage my tasks on a daily basis.
 {% endblock %}
 
 {% block content %}
