@@ -22,7 +22,7 @@
         {% endblock %}
     </head>
 
-    <body>
+    <body onload="init();">
         {% block header %}
             {% set active_page = active_page|default('') %}
             <!-- Page Header -->
@@ -60,6 +60,9 @@
         </footer>
 
         {% block javascript_libraries %}
+        <!-- EaselJS -->
+        <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
         <!-- jQuery -->
         <script src="/static/js/jquery.min.js"></script>
 

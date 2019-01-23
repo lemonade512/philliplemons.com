@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block header %}
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background: #202020">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="page-heading">
+                    <h1>EaselJS Demo</h1>
+                    <hr class="small">
+                    <span class="subheading">
+                    A demo of an EaselJS page
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}
+{% block content %}
+<h2>NOTE: I should really setup webpack and other things so I can user React</h2>
+<canvas id="demoCanvas" width="500" height="300"></canvas>
+{% endblock %}
+{% block page_js %}
+<script>
+    function init() {
+        stage = new createjs.Stage("demoCanvas");
+        circle = new createjs.Shape();
+        circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
+        circle.x = 100;
+        circle.y = 100;
+        stage.addChild(circle);
+        stage.update();
+        createjs.Ticker.addEventListener("tick", handleTick);
+    }
+
+    function handleTick() {
+        circle.x += 10;
+        if (circle.x > stage.canvas.width) { circle.x = 0; }
+        stage.update();
+    }
+</script>
+{% endblock %}
