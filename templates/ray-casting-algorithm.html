@@ -814,7 +814,21 @@ class Polygon:
                 # The horizontal ray does not intersect with the edge
                 continue
 
-            if point.x &lt; min(A.x, B.x): # The ray intersects with the edge inside = not inside continue try: m_edge = (B.y - A.y) / (B.x - A.x) except ZeroDivisionError: m_edge = _huge try: m_point = (point.y - A.y) / (point.x - A.x) except ZeroDivisionError: m_point = _huge if m_point &gt;= m_edge:
+            if point.x &lt; min(A.x, B.x): # The ray intersects with the edge
+                inside = not inside
+                continue
+
+            try:
+                m_edge = (B.y - A.y) / (B.x - A.x)
+            except ZeroDivisionError:
+                m_edge = _huge
+
+            try:
+                m_point = (point.y - A.y) / (point.x - A.x)
+            except ZeroDivisionError:
+                m_point = _huge
+
+            if m_point &gt;= m_edge:
                 # The ray intersects with the edge
                 inside = not inside
                 continue
