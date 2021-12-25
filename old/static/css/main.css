@@ -1,0 +1,11 @@
+
+.centered {
+    text-align: center;
+}
+
+.alignright {
+    float: right;
+    display: inline;
+    margin: .5em 0 0 2em;
+}
+

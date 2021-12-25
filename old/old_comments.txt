@@ -1,0 +1,19 @@
+Post: No Cheating Allowed!!!
+Commenter: Elliot Iddon
+Timestamp: August 18, 2015 at 10:26 AM
+Comment:
+Interesting solution.
+\n
+You could resolve the tampering issue by using a rolling checksum (the checksum of this action depends on the actions before it) if I edit my history to remove the hint request then the checksum won’t be correct and you can tell I’ve tampered.
+\n
+Of course if I can get the hint while I’m not connected to the internet then I imagine it’s trivial to write a javascript bookmarklet that retrieves the hint without playing nice with your localstorage queue.
+
+Post: No Cheating Allowed!!!
+Commenter: Phillip Lemons
+Reply To: Elliot Iddon
+Timestamp: August 18, 2015 at 5:00 PM
+Comment:
+There are definitely ways to still cheat but we decided there are always going to cheat. For most of our early math exercises it would be easy to write a bot that just fills in the answer for you and submits it without Khan Academy ever knowing about it.
+\n
+That being said, this particular solution was meant to target a specific group of cheaters who had been causing trouble for teachers who use Khan Academy as a teaching tool. These kids are young and most likely can’t make their own sophisticated cheating tools. Perhaps in the future we will move towards a more secure way of doing things but for now we have satisfied the teachers who were having this problem.
+
