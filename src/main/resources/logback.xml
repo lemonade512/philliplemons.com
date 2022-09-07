@@ -1,3 +1,0 @@
-<configuration>
-    <logger name="io.netty" level="INFO" />
-</configuration>
