@@ -1,7 +1,8 @@
 The `old` directory has my code and blog posts from before my refactor to Kotlin.
 
-This was created mostly following this tutorial: https://cloud.google.com/community/tutorials/kotlin-springboot-app-engine-java8
+Most of the configuration files are taken from the Ktor example appengine repository:
+https://github.com/GoogleCloudPlatform/kotlin-samples/tree/main/appengine/ktor
 
 The following commands are useful:
-- `gradle appengineRun`
-- `gradle appengineDeploy`
+- `./gradlew appengineRun`
+- `./gradlew appengineDeploy`
