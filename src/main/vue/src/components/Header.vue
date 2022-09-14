@@ -1,19 +1,17 @@
 <template>
   <aside>
-    <div class="container">
-      <RouterLink to="/"><h1>Phillip Lemons</h1></RouterLink>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+    <RouterLink to="/"><h1>Phillip <span class="lastName">Lemons</span></h1></RouterLink>
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
   </aside>
 </template>
 
 <style scoped>
 aside {
   color: rgba(235, 235, 235, 0.64);
-  min-width: 20%;
+  padding: 30px;
   height: 100vh;
   background: #202020;
   line-height: 1.5;
@@ -21,15 +19,16 @@ aside {
   flex-direction: column;
 }
 
-.container {
-  position: relative;
-  margin: 0 15%;
-}
-
 h1 {
   color: rgba(235, 235, 235, 0.64);
   font-size: 30px;
   text-align: center;
+  margin: 0;
+}
+
+a:hover .lastName {
+  transition: color 0.5s;
+  color: #edd772;
 }
 
 nav {
