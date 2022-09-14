@@ -6,6 +6,6 @@ import Header from '../components/Header.vue'
 <template>
   <Header />
   <main>
-    <TheWelcome />
+    Hello World!
   </main>
 </template>

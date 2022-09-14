@@ -34,6 +34,14 @@ export default {
 </template>
 
 <style>
+main {
+  /* Center both horizontally and vertically */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .circle {
   height: 50px;
   width: 50px;
